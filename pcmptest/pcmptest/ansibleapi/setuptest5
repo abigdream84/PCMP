@@ -1,0 +1,546 @@
+192.168.10.132 | success >> {
+    "ansible_facts": {
+        "ansible_all_ipv4_addresses": [
+            "192.168.10.132"
+        ], 
+        "ansible_all_ipv6_addresses": [
+            "fe80::be16:ed06:dac:7471"
+        ], 
+        "ansible_architecture": "x86_64", 
+        "ansible_bios_date": "07/31/2013", 
+        "ansible_bios_version": "6.00", 
+        "ansible_cmdline": {
+            "BOOT_IMAGE": "/boot/vmlinuz-4.8.0-41-generic", 
+            "quiet": true, 
+            "ro": true, 
+            "root": "UUID=c08f33fa-4bdb-4318-9eb9-5e34bad65473", 
+            "splash": true
+        }, 
+        "ansible_date_time": {
+            "date": "2017-04-01", 
+            "day": "01", 
+            "epoch": "1491029742", 
+            "hour": "17", 
+            "iso8601": "2017-04-01T06:55:42Z", 
+            "iso8601_micro": "2017-04-01T06:55:42.829899Z", 
+            "minute": "55", 
+            "month": "04", 
+            "second": "42", 
+            "time": "17:55:42", 
+            "tz": "AEDT", 
+            "tz_offset": "+1100", 
+            "weekday": "Saturday", 
+            "year": "2017"
+        }, 
+        "ansible_default_ipv4": {
+            "address": "192.168.10.132", 
+            "alias": "ens33", 
+            "gateway": "192.168.10.1", 
+            "interface": "ens33", 
+            "macaddress": "00:0c:29:cb:00:f9", 
+            "mtu": 1500, 
+            "netmask": "255.255.255.0", 
+            "network": "192.168.10.0", 
+            "type": "ether"
+        }, 
+        "ansible_default_ipv6": {}, 
+        "ansible_devices": {
+            "fd0": {
+                "holders": [], 
+                "host": "", 
+                "model": null, 
+                "partitions": {}, 
+                "removable": "1", 
+                "rotational": "1", 
+                "scheduler_mode": "deadline", 
+                "sectors": "8", 
+                "sectorsize": "512", 
+                "size": "4.00 KB", 
+                "support_discard": "0", 
+                "vendor": null
+            }, 
+            "sda": {
+                "holders": [], 
+                "host": "SCSI storage controller: LSI Logic / Symbios Logic 53c1030 PCI-X Fusion-MPT Dual Ultra320 SCSI (rev 01)", 
+                "model": "VMware Virtual S", 
+                "partitions": {
+                    "sda1": {
+                        "sectors": "158785536", 
+                        "sectorsize": 512, 
+                        "size": "75.71 GB", 
+                        "start": "2048"
+                    }, 
+                    "sda2": {
+                        "sectors": "2", 
+                        "sectorsize": 512, 
+                        "size": "1.00 KB", 
+                        "start": "158789630"
+                    }, 
+                    "sda5": {
+                        "sectors": "8980480", 
+                        "sectorsize": 512, 
+                        "size": "4.28 GB", 
+                        "start": "158789632"
+                    }
+                }, 
+                "removable": "0", 
+                "rotational": "1", 
+                "scheduler_mode": "deadline", 
+                "sectors": "167772160", 
+                "sectorsize": "512", 
+                "size": "80.00 GB", 
+                "support_discard": "0", 
+                "vendor": "VMware,"
+            }, 
+            "sr0": {
+                "holders": [], 
+                "host": "SATA controller: VMware SATA AHCI controller", 
+                "model": "VMware SATA CD01", 
+                "partitions": {}, 
+                "removable": "1", 
+                "rotational": "1", 
+                "scheduler_mode": "deadline", 
+                "sectors": "2097151", 
+                "sectorsize": "512", 
+                "size": "1024.00 MB", 
+                "support_discard": "0", 
+                "vendor": "NECVMWar"
+            }
+        }, 
+        "ansible_distribution": "Ubuntu", 
+        "ansible_distribution_major_version": "16", 
+        "ansible_distribution_release": "xenial", 
+        "ansible_distribution_version": "16.04", 
+        "ansible_domain": "", 
+        "ansible_ens33": {
+            "active": true, 
+            "device": "ens33", 
+            "ipv4": {
+                "address": "192.168.10.132", 
+                "netmask": "255.255.255.0", 
+                "network": "192.168.10.0"
+            }, 
+            "ipv6": [
+                {
+                    "address": "fe80::be16:ed06:dac:7471", 
+                    "prefix": "64", 
+                    "scope": "link"
+                }
+            ], 
+            "macaddress": "00:0c:29:cb:00:f9", 
+            "module": "e1000", 
+            "mtu": 1500, 
+            "promisc": false, 
+            "type": "ether"
+        }, 
+        "ansible_env": {
+            "HOME": "/root", 
+            "LANG": "en_US.UTF-8", 
+            "LANGUAGE": "en_AU:en", 
+            "LC_CTYPE": "en_US.UTF-8", 
+            "LOGNAME": "root", 
+            "MAIL": "/var/mail/root", 
+            "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games", 
+            "PWD": "/root", 
+            "SHELL": "/bin/bash", 
+            "SHLVL": "1", 
+            "SSH_CLIENT": "192.168.10.132 34646 22", 
+            "SSH_CONNECTION": "192.168.10.132 34646 192.168.10.132 22", 
+            "SSH_TTY": "/dev/pts/21", 
+            "TERM": "xterm-256color", 
+            "USER": "root", 
+            "XDG_RUNTIME_DIR": "/run/user/0", 
+            "XDG_SESSION_ID": "49", 
+            "_": "/bin/sh"
+        }, 
+        "ansible_fips": false, 
+        "ansible_form_factor": "Other", 
+        "ansible_fqdn": "wyh-ubuntu16-1", 
+        "ansible_hostname": "wyh-ubuntu16-1", 
+        "ansible_interfaces": [
+            "lo", 
+            "ens33"
+        ], 
+        "ansible_kernel": "4.8.0-41-generic", 
+        "ansible_lo": {
+            "active": true, 
+            "device": "lo", 
+            "ipv4": {
+                "address": "127.0.0.1", 
+                "netmask": "255.0.0.0", 
+                "network": "127.0.0.0"
+            }, 
+            "ipv6": [
+                {
+                    "address": "::1", 
+                    "prefix": "128", 
+                    "scope": "host"
+                }
+            ], 
+            "mtu": 65536, 
+            "promisc": false, 
+            "type": "loopback"
+        }, 
+        "ansible_lsb": {
+            "codename": "xenial", 
+            "description": "Ubuntu 16.04.2 LTS", 
+            "id": "Ubuntu", 
+            "major_release": "16", 
+            "release": "16.04"
+        }, 
+        "ansible_machine": "x86_64", 
+        "ansible_machine_id": "4c5aa9b75f9546028301049a66d9f3cd", 
+        "ansible_memfree_mb": 738, 
+        "ansible_memory_mb": {
+            "nocache": {
+                "free": 2130, 
+                "used": 2098
+            }, 
+            "real": {
+                "free": 738, 
+                "total": 4228, 
+                "used": 3490
+            }, 
+            "swap": {
+                "cached": 0, 
+                "free": 4379, 
+                "total": 4384, 
+                "used": 5
+            }
+        }, 
+        "ansible_memtotal_mb": 4228, 
+        "ansible_mounts": [
+            {
+                "device": "/dev/sda1", 
+                "fstype": "ext4", 
+                "mount": "/", 
+                "options": "rw,relatime,errors=remount-ro,data=ordered", 
+                "size_available": 69098524672, 
+                "size_total": 79887818752, 
+                "uuid": "c08f33fa-4bdb-4318-9eb9-5e34bad65473"
+            }
+        ], 
+        "ansible_nodename": "wyh-ubuntu16-1", 
+        "ansible_os_family": "Debian", 
+        "ansible_pkg_mgr": "apt", 
+        "ansible_processor": [
+            "GenuineIntel", 
+            "Intel(R) Core(TM) i7-4720HQ CPU @ 2.60GHz", 
+            "GenuineIntel", 
+            "Intel(R) Core(TM) i7-4720HQ CPU @ 2.60GHz", 
+            "GenuineIntel", 
+            "Intel(R) Core(TM) i7-4720HQ CPU @ 2.60GHz", 
+            "GenuineIntel", 
+            "Intel(R) Core(TM) i7-4720HQ CPU @ 2.60GHz"
+        ], 
+        "ansible_processor_cores": 2, 
+        "ansible_processor_count": 2, 
+        "192.168.10.129 | success >> {
+    "ansible_facts": {
+        "ansible_all_ipv4_addresses": [
+            "192.168.10.129"
+        ], 
+        "ansible_all_ipv6_addresses": [
+            "fe80::75a7:b121:c8a9:f83f"
+        ], 
+        "ansible_architecture": "x86_64", 
+        "ansible_bios_date": "07/31/2013", 
+        "ansible_bios_version": "6.00", 
+        "ansible_cmdline": {
+            "BOOT_IMAGE": "/boot/vmlinuz-4.4.0-71-generic", 
+            "quiet": true, 
+            "ro": true, 
+            "root": "UUID=b74ad84a-1270-479a-85cb-6abbfdb1a6c1", 
+            "splash": true
+        }, 
+        "ansible_date_time": {
+            "date": "2017-04-01", 
+            "day": "01", 
+            "epoch": "1491029743", 
+            "hour": "14", 
+            "iso8601": "2017-04-01T06:55:43Z", 
+            "iso8601_micro": "2017-04-01T06:55:43.983303Z", 
+            "minute": "55", 
+            "month": "04", 
+            "second": "43", 
+            "time": "14:55:43", 
+            "tz": "CST", 
+            "tz_offset": "+0800", 
+            "weekday": "星期六", 
+            "year": "2017"
+        }, 
+        "ansible_default_ipv4": {
+            "address": "192.168.10.129", 
+            "alias": "ens33", 
+            "gateway": "192.168.10.1", 
+            "interface": "ens33", 
+            "macaddress": "00:0c:29:86:be:95", 
+            "mtu": 1500, 
+            "netmask": "255.255.255.0", 
+            "network": "192.168.10.0", 
+            "type": "ether"
+        }, 
+        "ansible_default_ipv6": {}, 
+        "ansible_devices": {
+            "fd0": {
+                "holders": [], 
+                "host": "", 
+                "model": null, 
+                "partitions": {}, 
+                "removable": "1", 
+                "rotational": "1", 
+                "scheduler_mode": "deadline", 
+                "sectors": "8", 
+                "sectorsize": "512", 
+                "size": "4.00 KB", 
+                "support_discard": "0", 
+                "vendor": null
+            }, 
+            "sda": {
+                "holders": [], 
+                "host": "SCSI storage controller: LSI Logic / Symbios Logic 53c1030 PCI-X Fusion-MPT Dual Ultra320 SCSI (rev 01)", 
+                "model": "VMware Virtual S", 
+                "partitions": {
+                    "sda1": {
+                        "sectors": "243267584", 
+                        "sectorsize": 512, 
+                        "size": "116.00 GB", 
+                        "start": "2048"
+                    }, 
+                    "sda2": {
+                        "sectors": "2", 
+                        "sectorsize": 512, 
+                        "size": "1.00 KB", 
+                        "start": "243271678"
+                    }, 
+                    "sda5": {
+                        "sectors": "8384512", 
+                        "sectorsize": 512, 
+                        "size": "4.00 GB", 
+                        "start": "243271680"
+                    }
+                }, 
+                "removable": "0", 
+                "rotational": "1", 
+                "scheduler_mode": "deadline", 
+                "sectors": "251658240", 
+                "sectorsize": "512", 
+                "size": "120.00 GB", 
+                "support_discard": "0", 
+                "vendor": "VMware,"
+            }, 
+            "sr0": {
+                "holders": [], 
+                "host": "SATA controller: VMware SATA AHCI controller", 
+                "model": "VMware SATA CD01", 
+                "partitions": {}, 
+                "removable": "1", 
+                "rotational": "1", 
+                "scheduler_mode": "deadline", 
+                "sectors": "2097151", 
+                "sectorsize": "512", 
+                "size": "1024.00 MB", 
+                "support_discard": "0", 
+                "vendor": "NECVMWar"
+            }
+        }, 
+        "ansible_distribution": "Ubuntu", 
+        "ansible_distribution_major_version": "16", 
+        "ansible_distribution_release": "xenial", 
+        "ansible_distribution_version": "16.04", 
+        "ansible_domain": "", 
+        "ansible_ens33": {
+            "active": true, 
+            "device": "ens33", 
+            "ipv4": {
+                "address": "192.168.10.129", 
+                "netmask": "255.255.255.0", 
+                "network": "192.168.10.0"
+            }, 
+            "ipv6": [
+                {
+                    "address": "fe80::75a7:b121:c8a9:f83f", 
+                    "prefix": "64", 
+                    "scope": "link"
+                }
+            ], 
+            "macaddress": "00:0c:29:86:be:95", 
+            "module": "e1000", 
+            "mtu": 1500, 
+            "promisc": false, 
+            "type": "ether"
+        }, 
+        "ansible_env": {
+            "HOME": "/root", 
+            "LANG": "en_US.UTF-8", 
+            "LC_ADDRESS": "zh_CN.UTF-8", 
+            "LC_CTYPE": "en_US.UTF-8", 
+            "LC_IDENTIFICATION": "zh_CN.UTF-8", 
+            "LC_MEASUREMENT": "zh_CN.UTF-8", 
+            "LC_MONETARY": "zh_CN.UTF-8", 
+            "LC_NAME": "zh_CN.UTF-8", 
+            "LC_NUMERIC": "zh_CN.UTF-8", 
+            "LC_PAPER": "zh_CN.UTF-8", 
+            "LC_TELEPHONE": "zh_CN.UTF-8", 
+            "LC_TIME": "zh_CN.UTF-8", 
+            "LOGNAME": "root", 
+            "MAIL": "/var/mail/root", 
+            "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games", 
+            "PWD": "/root", 
+            "SHELL": "/bin/bash", 
+            "SHLVL": "1", 
+            "SSH_CLIENT": "192.168.10.132 60964 22", 
+            "SSH_CONNECTION": "192.168.10.132 60964 192.168.10.129 22", 
+            "SSH_TTY": "/dev/pts/2", 
+            "TERM": "xterm-256color", 
+            "USER": "root", 
+            "XDG_RUNTIME_DIR": "/run/user/0", 
+            "XDG_SESSION_ID": "1", 
+            "_": "/bin/sh"
+        }, 
+        "ansible_fips": false, 
+        "ansible_form_factor": "Other", 
+        "ansible_fqdn": "ubuntu1", 
+        "ansible_hostname": "ubuntu1", 
+        "ansible_interfaces": [
+            "lo", 
+            "ens33"
+        ], 
+        "ansible_kernel": "4.4.0-71-generic", 
+        "ansible_lo": {
+            "active": true, 
+            "device": "lo", 
+            "ipv4": {
+                "address": "127.0.0.1", 
+                "netmask": "255.0.0.0", 
+                "network": "127.0.0.0"
+            }, 
+            "ipv6": [
+                {
+                    "address": "::1", 
+                    "prefix": "128", 
+                    "scope": "host"
+                }
+            ], 
+            "mtu": 65536, 
+            "promisc": false, 
+            "type": "loopback"
+        }, 
+        "ansible_lsb": {
+            "codename": "xenial", 
+            "description": "Ubuntu Xenial Xerus (development branch)", 
+            "id": "Ubuntu", 
+            "major_release": "16", 
+            "release": "16.04"
+        }, 
+        "ansible_machine": "x86_64", 
+        "ansible_machine_id": "c0116ae6c13c4c119f613658e67ceadc", 
+        "ansible_memfree_mb": 1470, 
+        "ansible_memory_mb": {
+            "nocache": {
+                "free": 2105, 
+                "used": 860
+            }, 
+            "real": {
+                "free": 1470, 
+                "total": 2965, 
+                "used": 1495
+            }, 
+            "swap": {
+                "cached": 0, 
+                "free": 4093, 
+                "total": 4093, 
+                "used": 0
+            }
+        }, 
+        "ansible_memtotal_mb": 2965, 
+        "ansible_mounts": [
+            {
+                "device": "/dev/sda1", 
+                "fstype": "ext4", 
+                "mount": "/", 
+                "options": "rw,relatime,errors=remount-ro,data=ordered", 
+                "size_available": 101043367936, 
+                "size_total": 122464473088, 
+                "uuid": "b74ad84a-1270-479a-85cb-6abbfdb1a6c1"
+            }
+        ], 
+        "ansible_nodename": "ubuntu1", 
+        "ansible_os_family": "Debian", 
+        "ansible_pkg_mgr": "apt", 
+        "ansible_processor": [
+            "GenuineIntel", 
+            "Intel(R) Core(TM) i7-4720HQ CPU @ 2.60GHz", 
+     ansible_processor_threads_per_core": 1, 
+        "ansible_processor_vcpus": 4, 
+        "ansible_product_name": "VMware Virtual Platform", 
+        "ansible_product_serial": "VMware-56 4d 17 7e d0 36 a4 d8-dc de ec 23 44 cb 00 f9", 
+        "ansible_product_uuid": "564D177E-D036-A4D8-DCDE-EC2344CB00F9", 
+        "ansible_product_version": "None", 
+        "ansible_python_version": "2.7.12", 
+        "ansible_selinux": false, 
+        "ansible_ssh_host_key_dsa_public": "AAAAB3NzaC1kc3MAAACBAKsxNNC0CEzDmLbOuSJ54ms2bXJOQY2fydMH70VcFAyk3/RNASGrMzKWPYXaJAPf8xsR2wLr46+ABejkVPtOqi5i5Qxc21zZWkTcQjTIRA+TVKB+SXxSbRbGgKRrexsvPxBW5at2XtrUFLPJQbNmTGT4+zJdWWdvqj4FIU0wLb7TAAAAFQDCiBd06YY6R+gKT2gk8eHLqreO8wAAAIEAp6AO5SNL0XdEvH+UcQEOgloDIo76/1fu6TwGRVBtV571unSl3zp/Mn9S+NB/6Q+SKUwea03jIrRfHsRLp3cwWUrWIVMQZ+BoPSqOWeFw6C+TAmxLC72IPrnLjUweFdRUm0q5JD3oPiS5n3KL7HxKluAIrlIzJbk88/fstzOJ1rwAAACAOIODCAWzsq0uwE/5ad/0tXVtkR/3DWL1meiLf2ktZxXkKw/nhHu5aRVYV4YksWtYBkyfwrTWi8YIKsxnnyrYJxxvRbu9rWz+9Lxj+U07Pu6iuRHb4yzxeXO/2Si2rlNLoLY9l9qDorXZQjwmrx/kmA57o2j2OmjUCbjseXQzR9o=", 
+        "ansible_ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBBvU2X6LTX2CUCTXpQfTTsjrumJ0jjW6ulscXoQOWp5Q2prH+8C+2L5ZKGcNqOAYRSxP9vG21J9JcFf27qdF1B4=", 
+        "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABAQDMFAjArJkxXYgucGXXD2FRG5DBXFJYqDXeFZZhYJjwpVIz6YQUD6n5llx9i06yJorPtrIxkg6WPAHsJEZ+g6ldxO9czuw0IC5WerH3nMqf13GrH8rZ8VuXxrkPBtUAhDr0ozouYjk4RFeBJln53fTrM5DtDMJDKJ8o4hn/f7bIY4WiIkSf+/qdbfMxeo4RjOY7sH0hfrse+0PzZvSrsDnUjQRoupT8h36hdP7512o/zrL7lh2/H8cJMkLYsbQn2/XHzr4YWV3xvn11E7Bkf77Paexb+DGuhGO09pLPQIwO0OPdXezUXzfL5BoHVmo8Ou0L1XG3/tcssNrOKz/JIBYJ", 
+        "ansible_swapfree_mb": 4379, 
+        "ansible_swaptotal_mb": 4384, 
+        "ansible_system": "Linux", 
+        "ansible_system_vendor": "VMware, Inc.", 
+        "ansible_user_dir": "/root", 
+        "ansible_user_gecos": "root", 
+        "ansible_user_gid": 0, 
+        "ansible_user_id": "root", 
+        "ansible_user_shell": "/bin/bash", 
+        "ansible_user_uid": 0, 
+        "ansible_userspace_architecture": "x86_64", 
+        "ansible_userspace_bits": "64", 
+        "ansible_virtualization_role": "guest", 
+        "ansible_virtualization_type": "VMware", 
+        "module_setup": true
+    }, 
+    "changed": false
+}
+
+       "GenuineIntel", 
+            "Intel(R) Core(TM) i7-4720HQ CPU @ 2.60GHz", 
+            "GenuineIntel", 
+            "Intel(R) Core(TM) i7-4720HQ CPU @ 2.60GHz", 
+            "GenuineIntel", 
+            "Intel(R) Core(TM) i7-4720HQ CPU @ 2.60GHz", 
+            "GenuineIntel", 
+            "Intel(R) Core(TM) i7-4720HQ CPU @ 2.60GHz", 
+            "GenuineIntel", 
+            "Intel(R) Core(TM) i7-4720HQ CPU @ 2.60GHz"
+        ], 
+        "ansible_processor_cores": 3, 
+        "ansible_processor_count": 2, 
+        "ansible_processor_threads_per_core": 1, 
+        "ansible_processor_vcpus": 6, 
+        "ansible_product_name": "VMware Virtual Platform", 
+        "ansible_product_serial": "VMware-56 4d 0c f2 c0 e1 f1 7e-4a 95 9f 66 cc 86 be 95", 
+        "ansible_product_uuid": "564D0CF2-C0E1-F17E-4A95-9F66CC86BE95", 
+        "ansible_product_version": "None", 
+        "ansible_python_version": "2.7.12", 
+        "ansible_selinux": false, 
+        "ansible_ssh_host_key_dsa_public": "AAAAB3NzaC1kc3MAAACBAPw93qNRY+EkURNbkV0FQUxJeGwi3c0AyaL/lfX1ORnk54hNOX76pA0+WBpI3k8zOgB4CKkWOyXJq5Bu9eAfDfVuD9FnIo1iyCZzCm/nDKBjjX7gPMoI+45P/64VfTXApZmDtuutiFZ3OmyrvqygvC5NzyNg4zzDAQ/RQdqCEw0VAAAAFQCZ/VIvaUbAb7Xq6xaUTqTFI+LD5wAAAIBklD824Vn6ZFIIIfauKDJuvlAJFTZ7X+/wFz+LHOYN1ISaYdYGk9/+lGMmuM3M8wRHWgBboz2CIryosUhNFex0DlOh4EYhuhyggr9oHD5G8CneP7ansFK3b2DO1zyi9UzZRtdJSIyk0d52NMzqBv57nFu2lLTcfFYM+Q+mAeu18gAAAIBKzLuPl+cPRfET7Oa0mIIYGgO8GHL1oO/MGrRNSj5E+tcf8whwYaAbrQ05wjMNpZRUqrnA9b5y60HMtwOVcidBa2KZNbf6Tcdaxn71+RFcVZQBT21UjwewTs41A1Qdmjqp6KZ7akX3xU8zdYuLGIa2TuU8TR2wOR7xkgIhSaz4sw==", 
+        "ansible_ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBFOB4PDGNzi388NGLleWkFQxZne/+n4q9NE32/40Xhx5rMzF83FrR0YQkksb5Ux5OrZOoXTBf/SyFeNI1s6IoBU=", 
+        "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABAQCrNtkYM7Pj8x4msK4v1QlPUGI+414PyKi1UqGzLEZaOJkmGEpQ1NthS6FdjgSB6QkDa6jhEcURHh/FlkrciXQ2dSFiBeY4JCinCCWZTkoiTwH8nVX89amZ1BJUCtlcI97HC0HZM2+nozxArfuvcIBo6o5vMixnJIsJPI++HLJOyNBMsSVRCScZI3H9dm5+cBaIYdBLJbcIxcYMXYMg9y9VhzgWtqNiRz+Yr137zGdi0zNxrhh7QihKcHq38zJV/Y5cICxrpMFs9GGkc6cF3ALIPQEnX4yeV/7I0UQmy5ngi/VZtmFuY1NqfrraSsdOKWcm2luynOtYA1XmNHqHu23x", 
+        "ansible_swapfree_mb": 4093, 
+        "ansible_swaptotal_mb": 4093, 
+        "ansible_system": "Linux", 
+        "ansible_system_vendor": "VMware, Inc.", 
+        "ansible_user_dir": "/root", 
+        "ansible_user_gecos": "root", 
+        "ansible_user_gid": 0, 
+        "ansible_user_id": "root", 
+        "ansible_user_shell": "/bin/bash", 
+        "ansible_user_uid": 0, 
+        "ansible_userspace_architecture": "x86_64", 
+        "ansible_userspace_bits": "64", 
+        "ansible_virtualization_role": "guest", 
+        "ansible_virtualization_type": "VMware", 
+        "module_setup": true
+    }, 
+    "changed": false
+}
+

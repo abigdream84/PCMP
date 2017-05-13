@@ -1,0 +1,110 @@
+from django.db import models
+from unittest.util import _MAX_LENGTH
+
+# Create your models here.
+
+
+class UserProfile(models.Model):
+    name = models.CharField(max_length=50)
+    email = models.EmailField()
+    phone = models.CharField(max_length=30)
+    mobile = models.CharField(max_length=30)
+    memo = models.TextField(blank=True)
+    create_at = models.DateTimeField(blank=True,auto_now_add=True)
+    update_at = models.DateTimeField(blank=True,auto_now=True)
+    
+    def _unicode_(self):
+        return self.name
+
+
+class AdminInfo(models.Model):
+    user = models.OneToOneField('UserProfile')
+    username = models.CharField(max_length=50)
+    password = models.CharField(max_length=50)
+
+
+class DeviceType(models.Model):
+    name = models.CharField(max_length=65)
+    memo = models.TextField(null=True, blank=True)
+
+
+class Status(models.Model):
+    name = models.CharField(max_length=64)
+    memo = models.TextField(blank=True,unique=True)
+    
+
+class Asset(models.Model):
+    device_type = models.ForeignKey('DeviceType')
+    device_status = models.ForeignKey('Status')
+    hostname = models.CharField(max_length=128,blank=True,unique=True)
+    cabinet_num = models.CharField(max_length=30,null=True,blank=True)
+    cabinet_order = models.CharField(max_length=30,null=True,blank=True)
+    memo = models.TextField(null=True,blank=True)
+    create_at = models.DateTimeField(blank=True,auto_now_add=True)
+    update_at = models.DateTimeField(blank=True,auto_now=True)
+    idc = models.ForeignKey('IDC',null=True,blank=True)
+    business_unit = models.ForeignKey('BusinessUnit',null=True,blank=True)
+    userpro = models.ForeignKey('UserProfile',null=True,blank=True)
+    tag = models.ManyToManyField(null=True,blank=True)
+
+
+
+class Server(models.Model):
+    asset = models.OneToOneField('Asset')
+    sn = models.CharField(max_length=64)
+    manufactory = models.CharField(max_length=128,null=True,blank=True)
+    model = models.CharField(max_length=128,null=True,blank=True)
+    cpu_model = models.ForeignKey('CPU',null=True,blank=True)
+    nic = models.ManyToManyField('NIC')
+    physical_disk_driver = models.ManyToManyField('Disk',null=True,blank=True)
+    ram = models.ManyToManyField('Memory',null=True,blank=True)
+    
+
+class NIC(models.Model):
+    name = models.CharField(max_length=128,blank=True)
+    model = models.CharField(max_length=128,blank=True)
+    ipaddrs = models.IPAddressField(blank=True)
+    mac = models.CharField(max_length=128)
+    network = models.CharField(max_length=64,blank=True)
+    memo = models.TextField(blank=True)
+    create_at = models.DateTimeField(blank=True,auto_now_add=True)
+    update_at = models.DateTimeField(blank=True,auto_now=True)
+    server_info = models.ForeignKey('Server')
+
+
+
+
+
+    
+class IDC(models.Model):
+    region_display_name = models.CharField(max_length=64,default=None)
+    display_name = models.CharField(max_length=64,default=None)
+    floor = models.IntegerField(default=1)
+    memo = models.CharField(max_length=64)
+
+
+class BusinessUnit(models.Model):
+    name = models.CharField(max_length=64,unique=True)
+    contact = models.ForeignKey('UserProfile',default=None)
+    memo = models.CharField(max_length=64, blank=True)
+    
+
+class Tag(models.Model):
+    name = models.CharField(max_length=32,unique=True)
+    creater = models.ForeignKey('UserProfile',blank=True,null=True)
+
+
+class HandleLog(models.Model):
+    Handle_type = models.CharField(max_length=128)
+    summary = models.CharField(max_length=256)
+    detail = models.TextField()
+    create_at = models.DateTimeField(blank=True,auto_now_add=True)
+    creater = models.ForeignKey('UserProfile')
+    memo = models.TextField(null=True,blank=True)
+    
+
+    
+
+
+
+

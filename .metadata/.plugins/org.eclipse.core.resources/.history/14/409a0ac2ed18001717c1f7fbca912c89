@@ -1,0 +1,10 @@
+{% extends "adm/base.html" %}
+{% block content %}
+
+<div data-options="region:'west',split:true" title="Function Module" style="width:200px;">
+			
+</div>
+		<div data-options="region:'center',title:'Main Title',iconCls:'icon-ok'">
+		
+		
+{% endblock %}

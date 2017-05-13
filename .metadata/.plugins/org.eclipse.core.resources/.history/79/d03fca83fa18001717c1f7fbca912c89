@@ -1,0 +1,62 @@
+{% extends "adm/base.html" %}
+{% block content %}
+
+<div data-options="region:'west',split:true" title="Function Module" style="width:200px;">
+			<div class="easyui-accordion" data-options="fit:false,border:false">
+				<div title="Title1"  style="padding:10px;">
+					content1
+				</div>
+				<div title="Servers" data-options="selected:true" style="padding:10px;">
+					<div >
+						<a href="/CMDB/CreateServer" class="easyui-linkbutton" data-options="plain:true" style="width:100%">Create Server</a>
+					</div>
+					<a>content2</a>
+				</div>
+				<div title="Title3" style="padding:10px">
+					content3
+				</div>
+			</div>
+</div>
+<div data-options="region:'center',title:'Main Title',iconCls:'icon-ok'">
+	 <div style="margin:20px 0;"></div>
+    <div class="easyui-panel" title="New Topic" style="width:100%;max-width:400px;padding:30px 60px;" >
+        <form id="ff" class="easyui-form" method="post" data-options="novalidate:true">
+            <div style="margin-bottom:20px">
+                <select class="easyui-combobox" name="image_id" label="image_id" style="width:100%"><option value="ami-7a3dd76c" selected="selected">ami-7a3dd76c</option><option value="ami-7a3dd77c" >ami-7a3dd77c</option></select>
+            </div>
+            <div style="margin-bottom:20px">
+                <select class="easyui-combobox" name="instance_type" label="instance_type" style="width:100%"><option value="t1.micro" selected="selected">t1.micro</option><option value="t2.micro">t2.micro</option></select>
+            </div>
+            <div style="margin-bottom:20px">
+                <input class="easyui-textbox" name="subject" style="width:100%" data-options="label:'Subject:',required:true">
+            </div>
+            <div style="margin-bottom:20px">
+                <input class="easyui-textbox" name="message" style="width:100%;height:60px" data-options="label:'Message:',multiline:true">
+            </div>
+            <div style="margin-bottom:20px">
+                <select class="easyui-combobox" name="language" label="Language" style="width:100%"><option value="ar">Arabic</option><option value="bg">Bulgarian</option><option value="ca">Catalan</option><option value="zh-cht">Chinese Traditional</option><option value="cs">Czech</option><option value="da">Danish</option><option value="nl">Dutch</option><option value="en" selected="selected">English</option><option value="et">Estonian</option><option value="fi">Finnish</option><option value="fr">French</option><option value="de">German</option><option value="el">Greek</option><option value="ht">Haitian Creole</option><option value="he">Hebrew</option><option value="hi">Hindi</option><option value="mww">Hmong Daw</option><option value="hu">Hungarian</option><option value="id">Indonesian</option><option value="it">Italian</option><option value="ja">Japanese</option><option value="ko">Korean</option><option value="lv">Latvian</option><option value="lt">Lithuanian</option><option value="no">Norwegian</option><option value="fa">Persian</option><option value="pl">Polish</option><option value="pt">Portuguese</option><option value="ro">Romanian</option><option value="ru">Russian</option><option value="sk">Slovak</option><option value="sl">Slovenian</option><option value="es">Spanish</option><option value="sv">Swedish</option><option value="th">Thai</option><option value="tr">Turkish</option><option value="uk">Ukrainian</option><option value="vi">Vietnamese</option></select>
+            </div>
+        </form>
+        <div style="text-align:center;padding:5px 0">
+            <a href="javascript:void(0)" class="easyui-linkbutton" onclick="submitForm()" style="width:80px">Submit</a>
+            <a href="javascript:void(0)" class="easyui-linkbutton" onclick="clearForm()" style="width:80px">Clear</a>
+        </div>
+    </div>
+ 
+</div>
+<script>
+        function submitForm(){
+            $('#ff').form('submit',{
+                onSubmit:function(){
+                    return $(this).form('enableValidation').form('validate');
+                }
+            });
+        }
+        function clearForm(){
+            $('#ff').form('clear');
+        }
+</script>
+		
+		
+		
+{% endblock %}

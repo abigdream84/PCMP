@@ -1,0 +1,8 @@
+/usr/lib/python3.5
+/usr/lib/python3.5/plat-x86_64-linux-gnu
+/usr/lib/python3.5/lib-dynload
+/usr/local/lib/python3.5/dist-packages
+/usr/lib/python3/dist-packages
+/usr/lib/python2.7/dist-packages
+/usr/local/lib/python2.7/dist-packages/ansible-1.9.4-py2.7.egg
+/home/wyh/.local/lib/python3.5/site-packages

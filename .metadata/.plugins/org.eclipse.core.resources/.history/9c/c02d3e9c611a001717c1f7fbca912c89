@@ -1,0 +1,72 @@
+{% extends "adm/base.html" %}
+{% block content %}
+
+<div data-options="region:'west',split:true" title="Function Module" style="width:200px;">
+			<div class="easyui-accordion" data-options="fit:false,border:false">
+				<div title="Title1"  style="padding:10px;">
+					content1
+				</div>
+				<div title="Servers" data-options="selected:true" style="padding:10px;">
+					<div >
+						<a href="/CMDB/CreateServer" class="easyui-linkbutton" data-options="plain:true" style="width:100%">Create Server</a>
+					</div>
+					<div >
+						<a href="/CMDB/ManageServer" class="easyui-linkbutton" data-options="plain:true" style="width:100%">Manage Server</a>
+					</div>
+					<div >
+						<a href="/CMDB/ListConfig" class="easyui-linkbutton" data-options="plain:true" style="width:100%">List Config</a>
+					</div>
+				</div>
+				<div title="Title3" style="padding:10px">
+					content3
+				</div>
+			</div>
+</div>
+<div data-options="region:'center',title:'Create Server',iconCls:'icon-ok'">
+	 <div style="margin:20px 0;"></div>
+    <div class="easyui-panel" title="Create Server" style="width:100%;max-width:400px;padding:30px 60px;" >
+        <form id="ff" class="easyui-form" action="CMDB/CreateServer/" method="post" data-options="novalidate:true">
+            <div style="margin-bottom:20px">
+                <select class="easyui-combobox" name="image_id" label="image_id" style="width:100%"><option value="ami-7a3dd76c" selected="selected">ami-7a3dd76c</option><option value="ami-7a3dd77c" >ami-7a3dd77c</option></select>
+            </div>
+            <div style="margin-bottom:20px">
+                <select class="easyui-combobox" name="instance_type" label="instance_type" style="width:100%"><option value="t1.micro" selected="selected">t1.micro</option><option value="t2.micro">t2.micro</option></select>
+            </div>
+            <div style="margin-bottom:20px">
+                <select class="easyui-combobox" name="subnet_id" label="subnet_id" style="width:100%"><option value="None" selected="selected">Default</option><option value="subnet-29aa7260">subnet-29aa7260</option></select>
+            </div>
+            <div style="margin-bottom:20px">
+                <select class="easyui-combobox" name="security_group_ids" label="security_group_ids" style="width:100%"><option value="None" selected="selected">Default</option><option value="sg-8d7111f7">sg-8d7111f7</option></select>
+            </div>
+             <div style="margin-bottom:20px">
+                <input class="easyui-textbox" name="count" style="width:100%" data-options="label:'Count:',required:true">
+            </div>
+            <div style="margin-bottom:20px">
+                <select class="easyui-combobox" name="key_name" label="key_name" style="width:100%"><option value="MyFirstKey" selected="selected">MyFirstKey</option></select>
+            </div>
+            
+            
+        </form>
+        <div style="text-align:center;padding:5px 0">
+            <a href="javascript:void(0)" class="easyui-linkbutton" onclick="submitForm()" style="width:80px">Submit</a>
+            <a href="javascript:void(0)" class="easyui-linkbutton" onclick="clearForm()" style="width:80px">Clear</a>
+        </div>
+    </div>
+ 
+</div>
+<script>
+        function submitForm(){
+            $('#ff').form('submit',{
+                onSubmit:function(){
+                    return $(this).form('enableValidation').form('validate');
+                }
+            });
+        }
+        function clearForm(){
+            $('#ff').form('clear');
+        }
+</script>
+		
+		
+		
+{% endblock %}

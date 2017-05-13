@@ -1,0 +1,17 @@
+#!/usr/bin/env python
+
+import boto
+
+def get_instance():
+    conn = boto.connect_ec2('AKIAJCMEDAFNQ6DT45YA', '2skv7tVklHCB0m5or0ylgBsyIVYeiSs+lb1b/eKt')
+    reservations = conn.get_all_instances()
+#    for i in len(reservations):
+    instance = reservations[0].instances[3]
+    print(type(instance))
+    print(instance)
+
+
+if __name__ == '__main__':
+    get_instance()
+
+

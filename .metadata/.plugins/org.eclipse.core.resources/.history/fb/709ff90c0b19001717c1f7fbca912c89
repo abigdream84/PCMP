@@ -1,0 +1,41 @@
+{% extends "adm/base.html" %}
+{% block content %}
+
+<div data-options="region:'west',split:true" title="Function Module" style="width:200px;">
+			<div class="easyui-accordion" data-options="fit:false,border:false">
+				<div title="Title1"  style="padding:10px;">
+					content1
+				</div>
+				<div title="Servers" data-options="selected:true" style="padding:10px;">
+					<div >
+						<a href="/CMDB/CreateServer" class="easyui-linkbutton" data-options="plain:true" style="width:100%">Create Server</a>
+					</div>
+					<a>content2</a>
+				</div>
+				<div title="Title3" style="padding:10px">
+					content3
+				</div>
+			</div>
+</div>
+<div data-options="region:'center',title:'Main Title',iconCls:'icon-ok'">
+	
+	
+	
+ 
+</div>
+<script>
+        function submitForm(){
+            $('#ff').form('submit',{
+                onSubmit:function(){
+                    return $(this).form('enableValidation').form('validate');
+                }
+            });
+        }
+        function clearForm(){
+            $('#ff').form('clear');
+        }
+</script>
+		
+		
+		
+{% endblock %}

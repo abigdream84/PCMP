@@ -1,0 +1,62 @@
+{% extends "adm/base.html" %}
+{% block content %}
+
+<div data-options="region:'west',split:true" title="Function Module" style="width:200px;">
+			<div class="easyui-accordion" data-options="fit:false,border:false">
+				<div title="Title1"  style="padding:10px;">
+					content1
+				</div>
+				<div title="Servers" data-options="selected:true" style="padding:10px;">
+					<div >
+						<a href="/CMDB/CreateServer" class="easyui-linkbutton" data-options="plain:true" style="width:100%">Create Server</a>
+					</div>
+					<div >
+						<a href="/CMDB/ManageServer" class="easyui-linkbutton" data-options="plain:true" style="width:100%">Manage Server</a>
+					</div>
+					<div >
+						<a href="/CMDB/ListConfig" class="easyui-linkbutton" data-options="plain:true" style="width:100%">List Config</a>
+					</div>
+					
+				</div>
+				<div title="Title3" style="padding:10px">
+					content3
+				</div>
+			</div>
+</div>
+<div data-options="region:'center',title:'ManageServer',iconCls:'icon-ok'">
+	        
+    <div style="margin:20px 0;"></div>
+    
+    <table class="easyui-datagrid" title="Basic DataGrid" style="width:700px;height:250px"
+            data-options="singleSelect:true,collapsible:true,url:'datagrid_data1.json',method:'get'">
+        <thead>
+            <tr>
+                <th data-options="field:'hostname',width:120">Hostname</th>
+                <th data-options="field:'ipaddrs',width:100">IP Address</th>
+                <th data-options="field:'cpu',width:120,align:'right'">CPU</th>
+                <th data-options="field:'memory',width:120,align:'right'">Memory</th>
+                <th data-options="field:'disk',width:120">Disk</th>
+            </tr>
+        </thead>
+        <tbody>	
+        
+       
+        	{% for t in data %}
+        	<tr>
+	        	<td>{{ t.hostname }}</td>
+	        	<td>{{ t.ipaddrs }}</td>	
+	        	<td>{{ t.cpu }}</td>	
+	        	<td>{{ t.memory }}</td>	
+	        	<td>{{ t.disk }}</td>
+	        </tr>	
+        	{% endfor %}  
+         	      	
+        </tbody>
+    </table>
+  
+</div>
+ 
+		
+		
+		
+{% endblock %}

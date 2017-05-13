@@ -1,0 +1,216 @@
+54.145.208.29 | success >> {
+    "ansible_facts": {
+        "ansible_all_ipv4_addresses": [
+            "172.31.13.248"
+        ], 
+        "ansible_all_ipv6_addresses": [
+            "fe80::8e2:8aff:feba:9c2a"
+        ], 
+        "ansible_architecture": "x86_64", 
+        "ansible_bios_date": "NA", 
+        "ansible_bios_version": "NA", 
+        "ansible_cmdline": {
+            "console": "hvc0", 
+            "root": "LABEL=/", 
+            "selinux": "0"
+        }, 
+        "ansible_date_time": {
+            "date": "2017-04-04", 
+            "day": "04", 
+            "epoch": "1491265331", 
+            "hour": "00", 
+            "iso8601": "2017-04-04T00:22:11Z", 
+            "iso8601_micro": "2017-04-04T00:22:11.011542Z", 
+            "minute": "22", 
+            "month": "04", 
+            "second": "11", 
+            "time": "00:22:11", 
+            "tz": "UTC", 
+            "tz_offset": "+0000", 
+            "weekday": "Tuesday", 
+            "year": "2017"
+        }, 
+        "ansible_default_ipv4": {
+            "address": "172.31.13.248", 
+            "alias": "eth0", 
+            "gateway": "172.31.0.1", 
+            "interface": "eth0", 
+            "macaddress": "0a:e2:8a:ba:9c:2a", 
+            "mtu": 1500, 
+            "netmask": "255.255.240.0", 
+            "network": "172.31.0.0", 
+            "type": "ether"
+        }, 
+        "ansible_default_ipv6": {}, 
+        "ansible_devices": {
+            "xvda1": {
+                "holders": [], 
+                "host": "", 
+                "model": null, 
+                "partitions": {}, 
+                "removable": "0", 
+                "rotational": "0", 
+                "scheduler_mode": "noop", 
+                "sectors": "16777216", 
+                "sectorsize": "512", 
+                "size": "8.00 GB", 
+                "support_discard": "0", 
+                "vendor": null
+            }
+        }, 
+        "ansible_distribution": "Amazon", 
+        "ansible_distribution_major_version": "NA", 
+        "ansible_distribution_release": "NA", 
+        "ansible_distribution_version": "2016.09", 
+        "ansible_domain": "ec2.internal", 
+        "ansible_env": {
+            "AWS_AUTO_SCALING_HOME": "/opt/aws/apitools/as", 
+            "AWS_CLOUDWATCH_HOME": "/opt/aws/apitools/mon", 
+            "AWS_ELB_HOME": "/opt/aws/apitools/elb", 
+            "AWS_PATH": "/opt/aws", 
+            "EC2_AMITOOL_HOME": "/opt/aws/amitools/ec2", 
+            "EC2_HOME": "/opt/aws/apitools/ec2", 
+            "HOME": "/home/ec2-user", 
+            "JAVA_HOME": "/usr/lib/jvm/jre", 
+            "LANG": "en_US.UTF-8", 
+            "LC_CTYPE": "en_US.UTF-8", 
+            "LESSOPEN": "||/usr/bin/lesspipe.sh %s", 
+            "LESS_TERMCAP_mb": "\u001b[01;31m", 
+            "LESS_TERMCAP_md": "\u001b[01;38;5;208m", 
+            "LESS_TERMCAP_me": "\u001b[0m", 
+            "LESS_TERMCAP_se": "\u001b[0m", 
+            "LESS_TERMCAP_ue": "\u001b[0m", 
+            "LESS_TERMCAP_us": "\u001b[04;38;5;111m", 
+            "LOGNAME": "ec2-user", 
+            "MAIL": "/var/mail/ec2-user", 
+            "PATH": "/usr/local/bin:/bin:/usr/bin:/opt/aws/bin", 
+            "PWD": "/home/ec2-user", 
+            "SHELL": "/bin/bash", 
+            "SHLVL": "2", 
+            "SSH_CLIENT": "61.68.190.132 56295 22", 
+            "SSH_CONNECTION": "61.68.190.132 56295 172.31.13.248 22", 
+            "SSH_TTY": "/dev/pts/0", 
+            "TERM": "xterm-256color", 
+            "USER": "ec2-user", 
+            "_": "/usr/bin/python"
+        }, 
+        "ansible_eth0": {
+            "active": true, 
+            "device": "eth0", 
+            "ipv4": {
+                "address": "172.31.13.248", 
+                "netmask": "255.255.240.0", 
+                "network": "172.31.0.0"
+            }, 
+            "ipv6": [
+                {
+                    "address": "fe80::8e2:8aff:feba:9c2a", 
+                    "prefix": "64", 
+                    "scope": "link"
+                }
+            ], 
+            "macaddress": "0a:e2:8a:ba:9c:2a", 
+            "module": "xen_netfront", 
+            "mtu": 1500, 
+            "promisc": false, 
+            "type": "ether"
+        }, 
+        "ansible_fips": false, 
+        "ansible_form_factor": "NA", 
+        "ansible_fqdn": "ip-172-31-13-248.ec2.internal", 
+        "ansible_hostname": "ip-172-31-13-248", 
+        "ansible_interfaces": [
+            "lo", 
+            "eth0"
+        ], 
+        "ansible_kernel": "4.4.41-36.55.amzn1.x86_64", 
+        "ansible_lo": {
+            "active": true, 
+            "device": "lo", 
+            "ipv4": {
+                "address": "127.0.0.1", 
+                "netmask": "255.0.0.0", 
+                "network": "127.0.0.0"
+            }, 
+            "ipv6": [
+                {
+                    "address": "::1", 
+                    "prefix": "128", 
+                    "scope": "host"
+                }
+            ], 
+            "mtu": 65536, 
+            "promisc": false, 
+            "type": "loopback"
+        }, 
+        "ansible_machine": "x86_64", 
+        "ansible_machine_id": "389ca2f969099bc637cb81db58e2dd4d", 
+        "ansible_memfree_mb": 289, 
+        "ansible_memory_mb": {
+            "nocache": {
+                "free": 537, 
+                "used": 54
+            }, 
+            "real": {
+                "free": 289, 
+                "total": 591, 
+                "used": 302
+            }, 
+            "swap": {
+                "cached": 0, 
+                "free": 0, 
+                "total": 0, 
+                "used": 0
+            }
+        }, 
+        "ansible_memtotal_mb": 591, 
+        "ansible_mounts": [
+            {
+                "device": "/dev/xvda1", 
+                "fstype": "ext4", 
+                "mount": "/", 
+                "options": "rw,noatime,data=ordered", 
+                "size_available": 7185440768, 
+                "size_total": 8320901120, 
+                "uuid": "c4f9e6ea-3986-4a6e-ae4a-c856b04d806d"
+            }
+        ], 
+        "ansible_nodename": "ip-172-31-13-248", 
+        "ansible_os_family": "RedHat", 
+        "ansible_pkg_mgr": "yum", 
+        "ansible_processor": [
+            "GenuineIntel", 
+            "Intel(R) Xeon(R) CPU E5-2650 0 @ 2.00GHz"
+        ], 
+        "ansible_processor_cores": 1, 
+        "ansible_processor_count": 1, 
+        "ansible_processor_threads_per_core": 1, 
+        "ansible_processor_vcpus": 1, 
+        "ansible_product_name": "NA", 
+        "ansible_product_serial": "NA", 
+        "ansible_product_uuid": "NA", 
+        "ansible_product_version": "NA", 
+        "ansible_python_version": "2.7.12", 
+        "ansible_selinux": false, 
+        "ansible_ssh_host_key_dsa_public": "AAAAB3NzaC1kc3MAAACBANLII8vM8xi39uoE0sNP4ooIVAkUSn122dfbQ5/cQUm73hSgdPy6xnkiIrjN3pZMg0YXxuytTAX+oAmx8ay7kfpG8qEaUy7crg8lKivw96uB/VeyyoU9PTHMKeeoN6Y7laGOueooZCDCuBEMiElDsY6noEu3ByFGoD+d6yW7HPr7AAAAFQCpt7+u5XWevvL5uUX+G68Ec1ah1QAAAIA17IVn0fP22L8uymZ9dpIt/u9c/eF7mqt2LNpYYxXQadqTr1KJ2iPTDqqdcY6Nz7z6M7Ov+x2KH9FarfQ6d7z77comuqV1Dq8x/sEfwWbCUQhkVUJX2Zzi56lcw0WCpu1wYsVaBJVy33Pw6fCrKu/V+q9KrxNQpLqCx8EsTUTYIgAAAIEAvGQgyF5SYlAeCqJ3/gqb/6RT9gt0mdAXANHiNso2gNA398QWbg72hoT6fET0+kHwwGT5ya5gWvwJCfRtwRIcsdXdWz9P6VSIjWAQuiPAl7jHpEas9wdF5mwhVLf1ltcbKeDbURvPClD2/0z25rAC7jS9mCl422YQiWmFdV2MQd8=", 
+        "ansible_ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBJR5252/05x2aLOWmRr8JDvMtGjKgQ4teU2sHC0JTYsJQaQmFGAAAZ1DZoIEzMQNbhO33DgmSHRhukWjPoWIJF8=", 
+        "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABAQCfOw23ZDg55oihDCLP3TIeWTtJUP826C3mcHCr2SLt2Z/g+jLBlpNX8cUgD9V1ajKDSFUK3gabyKvdOR5GvwtaJZE8o+ObhFz9cSFeaJtdIuTRxz12uDhAwaLb5OrZPbX0YRHgClE6jBJOqm5svkwzhbSdesT9kRf3JGjfUXFL1ElrP1J/jp6rW0wIOLJQw3uSVTYNX/OtT6B3zmDH0HklJ0kJQ0t/nwqGseNKkfEDxz+xKqPNZ9p5czksrMOWtmE3V900DQqSjObNUlJ6XktGfCD37Njq/zT9FSAZKQyxXoGv1oDy9Z1g0jPtR8C6DJ1HxerJxxlr38KJfTUL0BeR", 
+        "ansible_swapfree_mb": 0, 
+        "ansible_swaptotal_mb": 0, 
+        "ansible_system": "Linux", 
+        "ansible_system_vendor": "NA", 
+        "ansible_user_dir": "/home/ec2-user", 
+        "ansible_user_gecos": "EC2 Default User", 
+        "ansible_user_gid": 500, 
+        "ansible_user_id": "ec2-user", 
+        "ansible_user_shell": "/bin/bash", 
+        "ansible_user_uid": 500, 
+        "ansible_userspace_architecture": "x86_64", 
+        "ansible_userspace_bits": "64", 
+        "ansible_virtualization_role": "guest", 
+        "ansible_virtualization_type": "xen", 
+        "module_setup": true
+    }, 
+    "changed": false
+}
+

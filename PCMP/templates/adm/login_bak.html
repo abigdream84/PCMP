@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Login</title>
+	<link href="../../static/css/bootstrap.min.css" rel="stylesheet">
+  
+	<style>
+		.login-container{
+			backgournd-color: #f3f1ee;
+			position: relative;
+			padding-bottom: 100px;
+			min-height: 100%;
+		}
+		
+		.panel{
+			background-color: transparent;
+			width: 100%;
+			height: 100%;
+			padding-top: 15px;
+		}
+		
+		.panel-content{
+			background-color: #fff;
+			padding: 27px 28px 30px;
+		}
+		
+		.fieldscontainer{
+			border-botton: 0;
+			margin-botton: 0;
+			padding-botton: 0;
+		}
+	
+	
+	</style>
+
+
+</head>
+<body>
+	<div class="login-container">
+		<div class="panel">
+			<div class="panel-content">
+				<div class="fieldscontainer">
+					<form  action="/adm/login/" method="POST">
+					  <div class="form-group">
+					    <label for="exampleUsername">Username</label>
+					    <input type="test" class="form-control" id="exampleUsername" name="username" placeholder="Username">
+					  </div>
+					  <div class="form-group">
+					    <label for="exampleInputPassword1">Password</label>
+					    <input type="password" class="form-control" id="exampleInputPassword1" name="password" placeholder="Password">
+					  </div>
+					  <button type="submit" class="btn btn-default">Submit</button>
+					</form>
+				
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+</body>
+</html>
